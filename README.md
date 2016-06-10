@@ -12,4 +12,5 @@ App to help user to understand their finance situation and raise awareness about
 <br>
 9th June 16 - Build presentation powerpoint why I build this app
 <br>
-10th June 16 - share presentation http://www.slideshare.net/ArifKurniawan52/debtfree-coach-presentation-62934640
+10th June 16 - share presentation http://www.slideshare.net/ArifKurniawan52/debtfree-coach-presentation-62934640 and add flowchart diagram
+
