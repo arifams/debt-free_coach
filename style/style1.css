@@ -1,0 +1,347 @@
+/*----------
+FONT FAMILY
+----------*/
+
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+header
+{
+  height: 4.8em;
+  background: red;
+  width: 100%;
+  top: 20px;
+  z-index: 10;
+}
+
+.lobster
+{
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  text-align: center;
+}
+
+.cabin
+{
+  font-family: 'Cabin', sans-serif;
+  color: lightgrey;
+  text-align: center;
+}
+
+.question
+{
+  color: white; 
+  font: bold 24px/45px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;  
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; 
+}
+
+.tips
+{
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-size: 1em;
+  color: #669999;
+  padding-top: 3em;
+}
+
+
+/*----------------------------------------------
+Start with small screen device (mobile) layout
+Portrait and Landscape
+------------------------------------------------*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+{
+
+
+    #container 
+    {
+      width: 100%;
+      margin: auto !important;
+      display: block;
+      height: 5em;
+      position: relative;
+      list-style-type: none;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .buddy 
+    {
+      display: none;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      color: #fff;
+      padding: 20px;
+      width: 90%;
+      height: 19em;
+      top: 2em;
+      left: 10px;
+      position: absolute;
+      cursor: hand;
+    }
+    .noDebt 
+    {
+      display: none;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      color: #fff;
+      padding: 20px;
+      width: 90%;
+      height: 19em;
+      top: 8em;
+      left: 10px;
+      position: fixed;
+      cursor: hand;
+    }
+    .rotate-left 
+    {
+      transform: rotate(30deg) scale(0.8);
+      transition: 1s;
+      margin-left: 400px;
+      cursor: e-resize;
+      opacity: 0;
+    }
+    .rotate-right 
+    {
+      transform: rotate(-30deg) scale(0.8);
+      transition: 1s;
+      opacity: 0;
+      margin-left: -400px;
+      cursor: w-resize;
+    }
+    .avatar 
+    {
+      background: #222;
+      width: 95%;
+      height: 15em;
+      display: block;
+      margin-top: 10px;
+      margin-left: 10px;
+      background-size: 100% auto !important;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative; /* to put text above image, just for fun tho*/
+    }
+    .like 
+    {
+      border-radius: 5px;
+      padding: 5px 10px;
+      border: 2px solid green;
+      color: green;
+      text-transform: uppercase;
+      font-size: 15px;
+      position: absolute;
+      top: 50px;
+      right: 40px;
+      text-shadow: none;
+    }
+    .dislike {
+      border-radius: 5px;
+      padding: 5px 10px;
+      border: 2px solid red;
+      color: red;
+      text-transform: uppercase;
+      font-size: 15px;
+      position: absolute;
+      top: 50px;
+      left: 40px;
+      text-shadow: none;
+    }
+
+    /*This is for tips under the pictures*/
+    .tips
+    {
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: left;
+      font-size: 1em;
+      color: #669999;
+      padding-top: 3em;
+    }
+    
+    /*This is the class for tips under No Debt option*/
+    .tipsNoDebt
+    {
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: left;
+      font-size: 1em;
+      color: #669999;
+      padding-top: 3em;
+    }
+    
+    /*This is style for input number*/
+    input 
+    {
+      height: 20px;
+      width: 80px;
+      padding: 5px 8px;
+    }
+
+    h2 { 
+      position: absolute; 
+      top: 5em; 
+      left: 30px; 
+      width: 100%; 
+    }
+
+    h2 span 
+    { 
+        color: white; 
+        font: 20px/40px Helvetica, Sans-Serif; 
+        letter-spacing: 0;  
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.3);
+        padding: 10px; 
+    }
+
+    h2 span.spacer 
+    {
+        padding:0 5px;
+        background: rgba(0, 0, 0, 0.0);
+    }
+}
+
+
+
+
+
+
+/*----------------------------------------------
+Now we are gonna have tablet orientation
+------------------------------------------------*/
+
+@media only screen 
+  and (min-device-width: 768px) /*768 for apple tablet and 800 for samsung device, so we set up 768 as the lowest*/
+  and (max-device-width: 1280px) /*apple device has 1024px but samsung has 1280, higher*/
+  and (-webkit-min-device-pixel-ratio: 2)
+{
+
+    #container 
+    {
+      width: 100%;
+      margin: auto !important;
+      display: block;
+      height: 5em;
+      position: relative;
+      list-style-type: none;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .buddy 
+    {
+      display: none;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      color: #fff;
+      padding: 2%;
+      width: 90%;
+      height: 31.5em;
+      top: 2em;
+      left: 5%;
+      position: absolute;
+      cursor: hand;
+    }
+
+    .avatar 
+    {
+      background: #222;
+      width: 95%;
+      height: 27em;
+      display: block;
+      margin-top: 2%;
+      margin-left: 2%;
+      background-size: 100% auto !important;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative; /* to put text above image, just for fun tho*/
+    }
+
+    .rotate-left 
+    {
+      transform: rotate(30deg) scale(0.8);
+      transition: 1s;
+      margin-left: 400px;
+      cursor: e-resize;
+      opacity: 0;
+    }
+    .rotate-right 
+    {
+      transform: rotate(-30deg) scale(0.8);
+      transition: 1s;
+      opacity: 0;
+      margin-left: -400px;
+      cursor: w-resize;
+    }
+    
+    /*This is style for h2, questions with background transparant*/
+    h2 { 
+      position: absolute; 
+      top: 60%; 
+      left: 4.2%; 
+      width: 100%; 
+    }
+
+    h2 span 
+    { 
+        color: white; 
+        font: 36px/62px Helvetica, Sans-Serif; 
+        letter-spacing: 0;  
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.3);
+        padding: 10px; 
+    }
+
+    h2 span.spacer 
+    {
+        padding:0 5px;
+        background: rgba(0, 0, 0, 0.0);
+    }
+
+    /*This is style for input number*/
+    input 
+    {
+      height: 20px;
+      width: 80px;
+      padding: 5px 8px;
+    }
+
+    /*This is for tips under the pictures*/
+    .tips
+    {
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: left;
+      font-size: 1.2em;
+      color: #669999;
+      padding-top: 3em;
+    }
+    
+    /*This is the class for tips under No Debt option*/
+    .tipsNoDebt
+    {
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: left;
+      font-size: 1.2em;
+      color: #669999;
+      padding-top: 3em;
+    }
+
+
+}
+
